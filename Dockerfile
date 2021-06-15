@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libxslt1-dev \  
     libcurl4-gnutls-dev \
+    libzip-dev \
     && apt-get clean
     
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/; \
